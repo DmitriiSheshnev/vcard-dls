@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+	<script src="filesaver.js"></script>
+	<script src="script.js"></script>
+	<title>Контактная карточка</title>
 </head>
-<body>
-    123232323
+
+<body lang="ru">
+	<div class="vcard">
+		<div class="vcard__head">
+			<div class="vcard__logo">
+				<img src="logo.svg" />
+			</div>
+			<p class="vcard__title" data-name="ORG;CHARSET=utf-8">ФГАУ «Федеральный центр прикладного развития искусственного интеллекта»</p>
+		</div>
+		<div class="vcard__body">
+			<p class="vcard__title vcard__title--name" data-name="N;CHARSET=utf-8">Дараселия Леван Шотаевич</p>
+			<p class="vcard__subtitle" data-name="TITLE;CHARSET=utf-8">Первый заместитель генерального директора ФГАУ «Федеральный центр прикладного развития искусственного интеллекта»</p>
+		</div>
+		<div class="vcard__footer">
+			<div class="vcard__block vcard__block--left">
+				<span class="vcard__line">Российская Федерация</span>
+				<span class="vcard__line">г. Москва,</span> 
+				<span class="vcard__line">3-я улица Ямского Поля, 32, 125040</span>
+			</div>
+			<div class="vcard__block vcard__block--right">
+				<span class="vcard__line"><b>Тел:</b> <span data-name="TEL;TYPE=CELL">+7 (926) 424-82-48</span></span>
+				<span class="vcard__line"><b>Email:</b> <span data-name="EMAIL;TYPE=WORK">l.daraseliya@fcpriirf.ru</span></span> 
+			</div>
+		</div>
+		<div class="vcard__btns">
+			<span class="vcard__btn">Скачать контакт</span>
+		</div>
+	</div>
 </body>
+
 </html>

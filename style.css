@@ -1,0 +1,31 @@
+:root {
+    --color-divider: #2f2f39;
+    --color-primary: #13b1de;
+    --color-bg:      #11111a;
+    --bs-body-color: #fff;
+    --bs-body-font-family: IBM Plex Sans;
+    --bs-accordion-border-color: red !important;
+    --title-size: 26px;
+    --bs-body-font-size:16px;
+    --bs-body-font-weight:300
+}
+
+body {position: relative;margin: 0; font-family: var(--bs-body-font-family); font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); line-height: var(--bs-body-line-height); color: var(--bs-body-color); text-align: var(--bs-body-text-align); background-color: var(--color-bg); -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+body{height: 100vh; display: flex; align-items: center; justify-content: center;}
+.vcard {text-align:center;width: 768px;margin: auto;padding: 20px; display: block; background-image: url(https://фцприи.рф/images/technical-support-img.png); background-repeat: no-repeat; background-size: 100% 100%; background-position: bottom right; border: 1px solid var(--color-divider); border-radius: 12px;}
+.vcard__title{font-size: var(--title-size);}
+.vcard__head, .vcard__body { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px dotted var(--color-divider); }
+.vcard__title--name { text-transform: uppercase; font-weight: 800;margin: 0px; }
+.vcard__footer { display: flex; }
+.vcard__block{width: 50%;text-align: left;}
+.vcard__block--right{text-align: right;}
+.vcard__line{display: block;margin-bottom: 5px;}
+.vcard__btn {transition:0.3s;cursor: pointer; display: inline-block; border: 1px solid var(--color-primary); padding: 10px 20px; line-height: normal; color: var(--color-primary); border-radius: 8px; }
+.vcard__btns{margin-top: 20px;}
+.vcard__btn:hover{background: var(--color-primary);color:var(--bs-body-color)}
+@media(max-width:768px){
+    .vcard{border: 0px;}
+    .vcard__footer{flex-wrap: wrap;text-align: center;}
+    .vcard .vcard__block{width: 100%;text-align: center;}
+    .vcard__block--left > * { display: inline-block; }
+}
